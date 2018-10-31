@@ -1,0 +1,323 @@
+2018-10-24 14:06:57.099 ERROR 13824 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: TRACE  for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 14:06:57.225  INFO 13824 --- [main] c.e.d.AssuranceApplicationTests          : Starting AssuranceApplicationTests on DESKTOP-S1APFEQ with PID 13824 (started by ramzi in C:\Users\ramzi\Documents\workspace-sts-3.9.5.RELEASE\Assurance)
+2018-10-24 14:06:57.226  INFO 13824 --- [main] c.e.d.AssuranceApplicationTests          : No active profile set, falling back to default profiles: default
+2018-10-24 14:06:57.265  INFO 13824 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4241e0f4: startup date [Wed Oct 24 14:06:57 CEST 2018]; root of context hierarchy
+2018-10-24 14:06:58.484  INFO 13824 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$cd1646e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 14:06:58.533  INFO 13824 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2018-10-24 14:06:58.559  INFO 13824 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$287e81e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 14:06:59.155  INFO 13824 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:07:00.193  INFO 13824 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:07:00.974  INFO 13824 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:07:01.368  INFO 13824 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4241e0f4: startup date [Wed Oct 24 14:06:57 CEST 2018]; root of context hierarchy
+2018-10-24 14:07:01.433  WARN 13824 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 14:07:01.490  INFO 13824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/students],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Student> com.example.demo.Controller.ControllerStudent.getStudent()
+2018-10-24 14:07:01.496  INFO 13824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 14:07:01.497  INFO 13824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 14:07:01.537  INFO 13824 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:07:01.537  INFO 13824 --- [main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:07:02.011  INFO 13824 --- [main] c.e.d.AssuranceApplicationTests          : Started AssuranceApplicationTests in 5.174 seconds (JVM running for 6.278)
+2018-10-24 14:07:02.208  INFO 13824 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4241e0f4: startup date [Wed Oct 24 14:06:57 CEST 2018]; root of context hierarchy
+2018-10-24 14:07:02.215  INFO 13824 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:08:34.767 ERROR 7824 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: TRACE  for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 14:08:34.851  INFO 7824 --- [main] c.e.demo.AssuranceApplicationTests       : Starting AssuranceApplicationTests on DESKTOP-S1APFEQ with PID 7824 (started by ramzi in C:\Users\ramzi\Documents\workspace-sts-3.9.5.RELEASE\Assurance)
+2018-10-24 14:08:34.852  INFO 7824 --- [main] c.e.demo.AssuranceApplicationTests       : No active profile set, falling back to default profiles: default
+2018-10-24 14:08:34.882  INFO 7824 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@d554c5f: startup date [Wed Oct 24 14:08:34 CEST 2018]; root of context hierarchy
+2018-10-24 14:08:36.203  INFO 7824 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$15642381] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 14:08:36.258  INFO 7824 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2018-10-24 14:08:36.290  INFO 7824 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$70cc5e82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 14:08:36.531  INFO 7824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-24 14:08:36.840  INFO 7824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-24 14:08:36.896  INFO 7824 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:08:37.892  INFO 7824 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:08:38.488  INFO 7824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:08:38.885  INFO 7824 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@d554c5f: startup date [Wed Oct 24 14:08:34 CEST 2018]; root of context hierarchy
+2018-10-24 14:08:38.954  WARN 7824 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 14:08:39.000  INFO 7824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/students],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Student> com.example.demo.Controller.ControllerStudent.getStudent()
+2018-10-24 14:08:39.004  INFO 7824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 14:08:39.005  INFO 7824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 14:08:39.046  INFO 7824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:08:39.047  INFO 7824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:08:39.448  INFO 7824 --- [main] c.e.demo.AssuranceApplicationTests       : Started AssuranceApplicationTests in 4.92 seconds (JVM running for 5.894)
+2018-10-24 14:08:39.593  INFO 7824 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@d554c5f: startup date [Wed Oct 24 14:08:34 CEST 2018]; root of context hierarchy
+2018-10-24 14:08:39.598  INFO 7824 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:08:39.600  INFO 7824 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-24 14:08:39.605  INFO 7824 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-24 14:10:34.165 ERROR 12072 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: TRACE  for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 14:10:34.235  INFO 12072 --- [main] com.example.demo.AssuranceApplication    : Starting AssuranceApplication on DESKTOP-S1APFEQ with PID 12072 (C:\Users\ramzi\Documents\workspace-sts-3.9.5.RELEASE\Assurance\target\classes started by ramzi in C:\Users\ramzi\Documents\workspace-sts-3.9.5.RELEASE\Assurance)
+2018-10-24 14:10:34.236  INFO 12072 --- [main] com.example.demo.AssuranceApplication    : No active profile set, falling back to default profiles: default
+2018-10-24 14:10:34.269  INFO 12072 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60d8c9b7: startup date [Wed Oct 24 14:10:34 CEST 2018]; root of context hierarchy
+2018-10-24 14:10:35.091  INFO 12072 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$6c4542d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 14:10:35.122  INFO 12072 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2018-10-24 14:10:35.149  INFO 12072 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$622c8f2e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 14:10:35.465  INFO 12072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2018-10-24 14:10:35.488  INFO 12072 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-24 14:10:35.488  INFO 12072 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-24 14:10:35.492  INFO 12072 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_191/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_191/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_191/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_191\bin;%JAVA_HOME%\bin;C:\apache-maven-3.5.3\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\ramzi\AppData\Local\Microsoft\WindowsApps;;C:\Users\ramzi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ramzi\AppData\Roaming\npm;C:\Users\ramzi\Downloads\spring-tool-suite-3.9.5.RELEASE-e4.8.0-win32-x86_64\sts-bundle\sts-3.9.5.RELEASE;;.]
+2018-10-24 14:10:35.598  INFO 12072 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-24 14:10:35.599  INFO 12072 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1330 ms
+2018-10-24 14:10:35.684  INFO 12072 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-10-24 14:10:35.686  INFO 12072 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet messageDispatcherServlet mapped to [/services/*]
+2018-10-24 14:10:35.689  INFO 12072 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-24 14:10:35.689  INFO 12072 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-24 14:10:35.690  INFO 12072 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-24 14:10:35.690  INFO 12072 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-24 14:10:35.826  INFO 12072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-24 14:10:35.990  INFO 12072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-24 14:10:36.031  INFO 12072 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:10:36.636  INFO 12072 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:10:36.901  INFO 12072 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:10:37.111  INFO 12072 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60d8c9b7: startup date [Wed Oct 24 14:10:34 CEST 2018]; root of context hierarchy
+2018-10-24 14:10:37.138  WARN 12072 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 14:10:37.169  INFO 12072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/students],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Student> com.example.demo.Controller.ControllerStudent.getStudent()
+2018-10-24 14:10:37.174  INFO 12072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 14:10:37.174  INFO 12072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 14:10:37.203  INFO 12072 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:10:37.203  INFO 12072 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:10:37.484  INFO 12072 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-24 14:10:37.486  INFO 12072 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-24 14:10:37.491  INFO 12072 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-24 14:10:37.523  INFO 12072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2018-10-24 14:10:37.526  INFO 12072 --- [main] com.example.demo.AssuranceApplication    : Started AssuranceApplication in 3.588 seconds (JVM running for 4.264)
+2018-10-24 14:10:42.777  INFO 12072 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-24 14:10:42.777  INFO 12072 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-24 14:10:42.797  INFO 12072 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-10-24 14:10:42.927 DEBUG 12072 --- [http-nio-8088-exec-1] org.hibernate.SQL                        : 
+    select
+        student0_.id as id1_0_,
+        student0_.age as age2_0_,
+        student0_.assurance as assuranc3_0_,
+        student0_.name as name4_0_ 
+    from
+        student student0_
+2018-10-24 14:28:13.059  INFO 12072 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-10-24 14:28:13.059  INFO 12072 --- [RMI TCP Connection(2)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60d8c9b7: startup date [Wed Oct 24 14:10:34 CEST 2018]; root of context hierarchy
+2018-10-24 14:28:13.061  INFO 12072 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-24 14:28:13.062  INFO 12072 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-10-24 14:28:13.063  INFO 12072 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:28:13.063  INFO 12072 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-24 14:28:13.066  INFO 12072 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-24 14:31:36.910 ERROR 10880 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: TRACE  for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 14:31:36.998  INFO 10880 --- [main] c.e.demo.AssuranceApplicationTests       : Starting AssuranceApplicationTests on DESKTOP-S1APFEQ with PID 10880 (started by ramzi in C:\Users\ramzi\Documents\workspace-sts-3.9.5.RELEASE\Assurance)
+2018-10-24 14:31:36.999  INFO 10880 --- [main] c.e.demo.AssuranceApplicationTests       : No active profile set, falling back to default profiles: default
+2018-10-24 14:31:37.031  INFO 10880 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@d554c5f: startup date [Wed Oct 24 14:31:37 CEST 2018]; root of context hierarchy
+2018-10-24 14:31:38.439  INFO 10880 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2b64f174] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 14:31:38.483  INFO 10880 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2018-10-24 14:31:38.512  INFO 10880 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$86cd2c75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 14:31:38.763  INFO 10880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-24 14:31:39.013  INFO 10880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-24 14:31:39.071  INFO 10880 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:31:40.153  INFO 10880 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:31:40.842  INFO 10880 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:31:41.217  INFO 10880 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@d554c5f: startup date [Wed Oct 24 14:31:37 CEST 2018]; root of context hierarchy
+2018-10-24 14:31:41.279  WARN 10880 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 14:31:41.331  INFO 10880 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/students],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Student> com.example.demo.Controller.ControllerStudent.getStudent()
+2018-10-24 14:31:41.337  INFO 10880 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 14:31:41.338  INFO 10880 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 14:31:41.391  INFO 10880 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:31:41.391  INFO 10880 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:31:41.802  INFO 10880 --- [main] c.e.demo.AssuranceApplicationTests       : Started AssuranceApplicationTests in 5.146 seconds (JVM running for 6.191)
+2018-10-24 14:31:41.953  INFO 10880 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@d554c5f: startup date [Wed Oct 24 14:31:37 CEST 2018]; root of context hierarchy
+2018-10-24 14:31:41.959  INFO 10880 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:31:41.960  INFO 10880 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-24 14:31:41.967  INFO 10880 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-24 14:34:52.199 ERROR 12184 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: TRACE  for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 14:34:52.284  INFO 12184 --- [main] c.e.demo.AssuranceApplicationTests       : Starting AssuranceApplicationTests on DESKTOP-S1APFEQ with PID 12184 (started by ramzi in C:\Users\ramzi\Documents\workspace-sts-3.9.5.RELEASE\Assurance)
+2018-10-24 14:34:52.285  INFO 12184 --- [main] c.e.demo.AssuranceApplicationTests       : No active profile set, falling back to default profiles: default
+2018-10-24 14:34:52.316  INFO 12184 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@d554c5f: startup date [Wed Oct 24 14:34:52 CEST 2018]; root of context hierarchy
+2018-10-24 14:34:53.795  INFO 12184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$beb7eec3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 14:34:53.859  INFO 12184 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2018-10-24 14:34:53.883  INFO 12184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1a2029c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 14:34:54.119  INFO 12184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-24 14:34:54.430  INFO 12184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-24 14:34:54.485  INFO 12184 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:34:55.505  INFO 12184 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:34:56.131  INFO 12184 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:34:56.521  INFO 12184 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@d554c5f: startup date [Wed Oct 24 14:34:52 CEST 2018]; root of context hierarchy
+2018-10-24 14:34:56.590  WARN 12184 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 14:34:56.636  INFO 12184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/students],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Student> com.example.demo.Controller.ControllerStudent.getStudent()
+2018-10-24 14:34:56.641  INFO 12184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 14:34:56.642  INFO 12184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 14:34:56.677  INFO 12184 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:34:56.678  INFO 12184 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:34:57.050  INFO 12184 --- [main] c.e.demo.AssuranceApplicationTests       : Started AssuranceApplicationTests in 5.098 seconds (JVM running for 6.037)
+2018-10-24 14:34:57.207  INFO 12184 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@d554c5f: startup date [Wed Oct 24 14:34:52 CEST 2018]; root of context hierarchy
+2018-10-24 14:34:57.213  INFO 12184 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:34:57.215  INFO 12184 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-24 14:34:57.221  INFO 12184 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-24 14:35:33.317 ERROR 5840 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: TRACE  for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 14:35:33.390  INFO 5840 --- [main] com.example.demo.AssuranceApplication    : Starting AssuranceApplication on DESKTOP-S1APFEQ with PID 5840 (C:\Users\ramzi\Documents\workspace-sts-3.9.5.RELEASE\Assurance\target\classes started by ramzi in C:\Users\ramzi\Documents\workspace-sts-3.9.5.RELEASE\Assurance)
+2018-10-24 14:35:33.390  INFO 5840 --- [main] com.example.demo.AssuranceApplication    : No active profile set, falling back to default profiles: default
+2018-10-24 14:35:33.422  INFO 5840 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c0c77c7: startup date [Wed Oct 24 14:35:33 CEST 2018]; root of context hierarchy
+2018-10-24 14:35:34.221  INFO 5840 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8a0be2f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 14:35:34.253  INFO 5840 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2018-10-24 14:35:34.283  INFO 5840 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e5741df1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 14:35:34.610  INFO 5840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2018-10-24 14:35:34.633  INFO 5840 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-24 14:35:34.633  INFO 5840 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-24 14:35:34.637  INFO 5840 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_191/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_191/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_191/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_191\bin;%JAVA_HOME%\bin;C:\apache-maven-3.5.3\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\ramzi\AppData\Local\Microsoft\WindowsApps;;C:\Users\ramzi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ramzi\AppData\Roaming\npm;C:\Users\ramzi\Downloads\spring-tool-suite-3.9.5.RELEASE-e4.8.0-win32-x86_64\sts-bundle\sts-3.9.5.RELEASE;;.]
+2018-10-24 14:35:34.748  INFO 5840 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-24 14:35:34.748  INFO 5840 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1326 ms
+2018-10-24 14:35:34.831  INFO 5840 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-10-24 14:35:34.832  INFO 5840 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet messageDispatcherServlet mapped to [/services/*]
+2018-10-24 14:35:34.835  INFO 5840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-24 14:35:34.836  INFO 5840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-24 14:35:34.836  INFO 5840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-24 14:35:34.837  INFO 5840 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-24 14:35:34.957  INFO 5840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-24 14:35:35.120  INFO 5840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-24 14:35:35.159  INFO 5840 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:35:35.771  INFO 5840 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:35:36.036  INFO 5840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:35:36.250  INFO 5840 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c0c77c7: startup date [Wed Oct 24 14:35:33 CEST 2018]; root of context hierarchy
+2018-10-24 14:35:36.275  WARN 5840 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 14:35:36.303  INFO 5840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/students],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Student> com.example.demo.Controller.ControllerStudent.getStudent()
+2018-10-24 14:35:36.307  INFO 5840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 14:35:36.308  INFO 5840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 14:35:36.334  INFO 5840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:35:36.334  INFO 5840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:35:36.580  INFO 5840 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-24 14:35:36.582  INFO 5840 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-24 14:35:36.587  INFO 5840 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-24 14:35:36.617  INFO 5840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2018-10-24 14:35:36.620  INFO 5840 --- [main] com.example.demo.AssuranceApplication    : Started AssuranceApplication in 3.524 seconds (JVM running for 4.206)
+2018-10-24 14:36:19.220  INFO 5840 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-24 14:36:19.221  INFO 5840 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-24 14:36:19.241  INFO 5840 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-10-24 14:36:19.383 DEBUG 5840 --- [http-nio-8088-exec-1] org.hibernate.SQL                        : 
+    select
+        student0_.id as id1_0_,
+        student0_.age as age2_0_,
+        student0_.assurance as assuranc3_0_,
+        student0_.name as name4_0_ 
+    from
+        student student0_
+2018-10-24 14:38:56.976 ERROR 6476 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: TRACE  for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 14:38:57.071  INFO 6476 --- [main] c.e.demo.AssuranceApplicationTests       : Starting AssuranceApplicationTests on DESKTOP-S1APFEQ with PID 6476 (started by ramzi in C:\Users\ramzi\Documents\workspace-sts-3.9.5.RELEASE\Assurance)
+2018-10-24 14:38:57.073  INFO 6476 --- [main] c.e.demo.AssuranceApplicationTests       : No active profile set, falling back to default profiles: default
+2018-10-24 14:38:57.104  INFO 6476 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@d554c5f: startup date [Wed Oct 24 14:38:57 CEST 2018]; root of context hierarchy
+2018-10-24 14:38:58.466  INFO 6476 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2b64f174] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 14:38:58.515  INFO 6476 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2018-10-24 14:38:58.545  INFO 6476 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$86cd2c75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 14:38:58.786  INFO 6476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-24 14:38:59.100  INFO 6476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-24 14:38:59.156  INFO 6476 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:39:00.161  INFO 6476 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:39:00.819  INFO 6476 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:39:01.257  INFO 6476 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@d554c5f: startup date [Wed Oct 24 14:38:57 CEST 2018]; root of context hierarchy
+2018-10-24 14:39:01.322  WARN 6476 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 14:39:01.386  INFO 6476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/students],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Student> com.example.demo.Controller.ControllerStudent.getStudent()
+2018-10-24 14:39:01.391  INFO 6476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 14:39:01.393  INFO 6476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 14:39:01.434  INFO 6476 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:39:01.435  INFO 6476 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:39:01.920  INFO 6476 --- [main] c.e.demo.AssuranceApplicationTests       : Started AssuranceApplicationTests in 5.179 seconds (JVM running for 6.159)
+2018-10-24 14:39:02.075  INFO 6476 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@d554c5f: startup date [Wed Oct 24 14:38:57 CEST 2018]; root of context hierarchy
+2018-10-24 14:39:02.095  INFO 6476 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:39:02.096  INFO 6476 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-24 14:39:02.105  INFO 6476 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-24 14:39:13.899 ERROR 9848 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: TRACE  for 'org.hibernate.type.descriptor.sql.BasicBinder'
+2018-10-24 14:39:13.968  INFO 9848 --- [main] com.example.demo.AssuranceApplication    : Starting AssuranceApplication on DESKTOP-S1APFEQ with PID 9848 (C:\Users\ramzi\Documents\workspace-sts-3.9.5.RELEASE\Assurance\target\classes started by ramzi in C:\Users\ramzi\Documents\workspace-sts-3.9.5.RELEASE\Assurance)
+2018-10-24 14:39:13.968  INFO 9848 --- [main] com.example.demo.AssuranceApplication    : No active profile set, falling back to default profiles: default
+2018-10-24 14:39:14.000  INFO 9848 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4690b489: startup date [Wed Oct 24 14:39:13 CEST 2018]; root of context hierarchy
+2018-10-24 14:39:14.821  INFO 9848 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$662538e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 14:39:14.852  INFO 9848 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2018-10-24 14:39:14.882  INFO 9848 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c18d73e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-24 14:39:15.217  INFO 9848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2018-10-24 14:39:15.240  INFO 9848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-24 14:39:15.241  INFO 9848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-24 14:39:15.245  INFO 9848 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_191/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_191/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_191/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_191\bin;%JAVA_HOME%\bin;C:\apache-maven-3.5.3\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\ramzi\AppData\Local\Microsoft\WindowsApps;;C:\Users\ramzi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ramzi\AppData\Roaming\npm;C:\Users\ramzi\Downloads\spring-tool-suite-3.9.5.RELEASE-e4.8.0-win32-x86_64\sts-bundle\sts-3.9.5.RELEASE;;.]
+2018-10-24 14:39:15.346  INFO 9848 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-24 14:39:15.346  INFO 9848 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1347 ms
+2018-10-24 14:39:15.441  INFO 9848 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-10-24 14:39:15.442  INFO 9848 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet messageDispatcherServlet mapped to [/services/*]
+2018-10-24 14:39:15.445  INFO 9848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-24 14:39:15.446  INFO 9848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-24 14:39:15.446  INFO 9848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-24 14:39:15.446  INFO 9848 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-24 14:39:15.570  INFO 9848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-24 14:39:15.733  INFO 9848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-24 14:39:15.774  INFO 9848 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:39:16.393  INFO 9848 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:39:16.663  INFO 9848 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:39:16.885  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4690b489: startup date [Wed Oct 24 14:39:13 CEST 2018]; root of context hierarchy
+2018-10-24 14:39:16.911  WARN 9848 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-24 14:39:16.939  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/students],methods=[GET]}" onto public java.util.List<com.example.demo.Model.Student> com.example.demo.Controller.ControllerStudent.getStudent()
+2018-10-24 14:39:16.943  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-24 14:39:16.944  INFO 9848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-24 14:39:16.969  INFO 9848 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:39:16.969  INFO 9848 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-24 14:39:17.223  INFO 9848 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-24 14:39:17.225  INFO 9848 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-24 14:39:17.230  INFO 9848 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-24 14:39:17.247 ERROR 9848 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8088]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8088]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:261) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) [spring-context-5.0.10.RELEASE.jar:5.0.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230) [spring-boot-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at com.example.demo.AssuranceApplication.main(AssuranceApplication.java:10) [classes/:na]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_191]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_191]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_191]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_191]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_191]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:219) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1151) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	... 14 common frames omitted
+
+2018-10-24 14:39:17.250  INFO 9848 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-10-24 14:39:17.258  INFO 9848 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-10-24 14:39:17.262 ERROR 9848 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8088 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8088, or configure this application to listen on another port.
+
+2018-10-24 14:39:17.263  INFO 9848 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4690b489: startup date [Wed Oct 24 14:39:13 CEST 2018]; root of context hierarchy
+2018-10-24 14:39:17.264  INFO 9848 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-24 14:39:17.265  INFO 9848 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-10-24 14:39:17.266  INFO 9848 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 14:39:17.266  INFO 9848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-24 14:39:17.269  INFO 9848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-24 14:39:24.437 DEBUG 5840 --- [http-nio-8088-exec-5] org.hibernate.SQL                        : 
+    select
+        student0_.id as id1_0_,
+        student0_.age as age2_0_,
+        student0_.assurance as assuranc3_0_,
+        student0_.name as name4_0_ 
+    from
+        student student0_
+2018-10-24 15:46:03.315  INFO 5840 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-10-24 15:46:03.316  INFO 5840 --- [RMI TCP Connection(2)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c0c77c7: startup date [Wed Oct 24 14:35:33 CEST 2018]; root of context hierarchy
+2018-10-24 15:46:03.318  INFO 5840 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-24 15:46:03.319  INFO 5840 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-10-24 15:46:03.320  INFO 5840 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-10-24 15:46:03.320  INFO 5840 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-24 15:46:03.327  INFO 5840 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
