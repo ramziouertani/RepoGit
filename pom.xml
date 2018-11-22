@@ -5,7 +5,7 @@
   
   <groupId>fr.bpifrance.fmg.ctg.fct</groupId>
   <artifactId>mock</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>jar</packaging>
   
   <parent>
@@ -114,13 +114,8 @@
 		<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency> 
-		
-		
-		
-		
-		
-    </dependencies>
+        </dependency> 										
+   </dependencies>
 
     <build>
         <plugins>
@@ -134,10 +129,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>                  
-                    <source>10.0.2</source>
-                    <target>10.0.2</target>
-                </configuration>
             </plugin>
         </plugins>
     </build>

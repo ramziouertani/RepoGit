@@ -22,7 +22,7 @@ import fr.bpifrance.fmg.ctg.fct.mock.Model.Individu;
 import fr.bpifrance.fmg.ctg.fct.mock.Service.IndividuService;
 
 @RestController
-@RequestMapping("imx/rest/v1/")
+@RequestMapping("/imx/rest/v1/")
 public class IndividuIMXController {
 	
 	@Autowired
