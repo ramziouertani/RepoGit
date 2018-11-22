@@ -1,13 +1,12 @@
-package fr.bpifrance.fmg.ctg.fct.icp;
+package fr.bpifrance.fmg.ctg.fct.mock;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ICPApplication {
-
+public class AssuranceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ICPApplication.class, args);
+		SpringApplication.run(AssuranceApplication.class, args);
 	}
 }

@@ -1,4 +1,4 @@
-package fr.bpifrance.fmg.ctg.fct.icp;
+package fr.bpifrance.fmg.ctg.fct.mock;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,9 +7,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ICPApplicationTests {
+public class AssuranceApplicationTests {
 
 	@Test
 	public void contextLoads() {
 	}
+
 }

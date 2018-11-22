@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   
   <groupId>fr.bpifrance.fmg.ctg.fct</groupId>
-  <artifactId>icp</artifactId>
+  <artifactId>mock</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   
@@ -16,9 +16,9 @@
   </parent>
 
     <scm>
-        <url>http://gitlab.apps.web.bpifrance.fr/DPSM/DFI/SCT/IMX/ICP</url>
-        <connection>scm:git:http://gitlab.apps.web.bpifrance.fr/DPSM/DFI/SCT/IMX/ICP</connection>
-        <developerConnection>scm:git:http://gitlab.apps.web.bpifrance.fr/DPSM/DFI/SCT/IMX/ICP
+        <url>http://gitlab.apps.web.bpifrance.fr/DPSM/DFI/SCT/IMX/MOCK</url>
+        <connection>scm:git:http://gitlab.apps.web.bpifrance.fr/DPSM/DFI/SCT/IMX/MOCK</connection>
+        <developerConnection>scm:git:http://gitlab.apps.web.bpifrance.fr/DPSM/DFI/SCT/IMX/MOCK
         </developerConnection>
     </scm>
 
@@ -29,10 +29,7 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -82,6 +79,40 @@
             <version>6.1.1</version>
         </dependency>
 
+		
+	
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <dependency>
+           <groupId>org.springframework</groupId>
+           <artifactId>spring-beans</artifactId>
+        </dependency>
+        
+        <dependency>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter</artifactId>
+             <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency> 
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency> 
+		
+		
+		
+		
+		
     </dependencies>
 
     <build>
@@ -96,14 +127,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <annotationProcessorPaths>
-                        <path>
-                            <groupId>org.mapstruct</groupId>
-                            <artifactId>mapstruct-processor</artifactId>
-                            <version>${org.mapstruct.version}</version>
-                        </path>
-                    </annotationProcessorPaths>
+                <configuration>                  
+                    <source>10.0.2</source>
+                    <target>10.0.2</target>
                 </configuration>
             </plugin>
         </plugins>
