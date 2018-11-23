@@ -44,7 +44,12 @@ Response :
 GET :
 Uri : http://localhost:8082/imx/rest/v1/individus/{type}
 
-   le type peut être soit : SIG 'Entreprise' , ETA 'Etablissement' , ADR  'Adresse' , INT 'Interlocuteur'
+   le type peut être soit : 
+   SIG pour dire que la ressource est une 'Entreprise' ,  
+   ETA pour dire que la ressource est une  'Etablissement' , 
+   ADR pour dire que la ressource est une  'Adresse' , 
+   INT pour dire que la ressource est une  'Interlocuteur'
+   
    Exemple :  Lister tous les entreprises : 
    
        URI:http://localhost:8082/imx/rest/v1/individus/SIG
@@ -83,7 +88,7 @@ Uri : http://localhost:8082/imx/rest/v1/individus/{type}/{cle}
                            }
                          ]      
                          
-     si la clé n'existe pas dans la base
+     si la clé n'existe pas dans la base de donnée 
      Reponse sera : 
      
            {
@@ -98,7 +103,7 @@ Uri : http://localhost:8082/imx/rest/v1/individus/{type}/{cle}
                             ]
             }                        
                          
-#Ajouter une ressource dans la base de donnée 
+# Ajouter une ressource dans la base de donnée 
 POST
 
    Uri : http://localhost:8082/imx/rest/v1/individus
@@ -130,7 +135,7 @@ POST
                                }
                             ]
             }  
-    3) si l'un des parametre de requet body est de le mauvais type ou format :
+    3) si l'un des paramètres est mal définit :
     
             {
               "status": "IMX-ERRORS",
@@ -144,7 +149,7 @@ POST
                              ]
              } 
              
-     4) si le resource existe deja :
+     4) si la resource existe deja :
      
               {
                "status": "IMX-ERRORS",
@@ -157,7 +162,7 @@ POST
                                  }
                               ]
               }
-      5) si le resource n'a pas de liaison : 
+      5) si la resource n'a pas de liaison : 
             Exemple : si en veux creér une Etablissement et on a définit un parent qui n'est pas un clé pour tel entreprise dans la base :         
    
              Response : 
@@ -177,7 +182,7 @@ POST
                                 
                           
                           
- #Modifier une ressource dans la base de donnée 
+# Modifier une ressource dans la base de donnée 
 PUT 
 
    Uri : http://localhost:8082/imx/rest/v1/individus/{clé}
@@ -192,7 +197,7 @@ PUT
                           "siege": "xxxxxx"
                          }
 
-    Response : 
+    Réponse : 
     1) si la requet est bien definie :
        
             RESOURCE  Modified.
