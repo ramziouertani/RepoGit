@@ -7,6 +7,21 @@ public class ErrorDetails {
 	public String title;
 	
 	public String description;
+	
+	
+
+	public ErrorDetails() {
+		super();
+	}
+
+	
+	public ErrorDetails(String code, String title, String description) {
+		super();
+		this.code = code;
+		this.title = title;
+		this.description = description;
+	}
+
 
 	public String getCode() {
 		return code;

@@ -28,15 +28,11 @@ public class ExceptionControllerAdvice {
 	
 	@ExceptionHandler(HttpMessageNotReadableException.class)
 	public ResponseEntity<ErrorRetour> exceptionHandler2(Exception ex) {
-		ErrorRetour error = new ErrorRetour();
-		error.setStatus("IMX-ERRORS");
-		error.setMessage("Empty Body");
 		List<ErrorDetails> listDetailError = new ArrayList<>();
-		  ErrorDetails errorDetail = new ErrorDetails();
-		  errorDetail.setCode("IMX-0005");
-		  errorDetail.setDescription("la requête est vide ");
-		  errorDetail.setTitle("requet");
+		  ErrorDetails errorDetail = new ErrorDetails("IMX-0005","Empty Body","Empty Body");		 
 		  listDetailError.add(errorDetail);
+			ErrorRetour error = new ErrorRetour("IMX-ERRORS","Fonctionelle",listDetailError);
+
 		  
 		  error.setListErrors(listDetailError);
 		return new ResponseEntity<ErrorRetour>(error, HttpStatus.OK);

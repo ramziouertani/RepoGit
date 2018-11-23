@@ -28,8 +28,22 @@ public class IndividuService {
 	
 	public List<Individu> getIndividuByParent(String parent) {
 		
-		List<Individu> list =individuRepo.findAll().stream().filter(ob -> ob.getCle().equals(parent)).collect(Collectors.toList());
+		List<Individu> list =individuRepo.findAll().
+				stream().
+				filter(ob -> ob.getCle().equals(parent)).
+				collect(Collectors.toList());
 		
+		return list;
+	}
+	
+	public List<Individu> getIndividuByNom(String nom) {
+		
+		List<Individu> list =individuRepo.findAll().
+				stream().
+				filter(ob -> ob.getType().equals(nom)).
+				collect(Collectors.toList());
+		
+		Individu ind = list.get(0);
 		return list;
 	}
 	
@@ -41,40 +55,41 @@ public class IndividuService {
 		
 		return individuRepo.existsById(cle);
 	}
+	
+	public List<Individu> individuExistParam(String nom,String cle) {
+		
+		List<Individu> list =individuRepo.findAll().
+				stream().
+				filter(ob -> ob.getType().equals(nom)).
+				collect(Collectors.toList());
+		
+		return list.stream().filter(obj -> obj.getCle().equals(cle)).collect(Collectors.toList());
+		
+	}
 
 	public List<ErrorDetails> checkParameter(Individu individu) {
 		
-		ErrorDetails errorDetail = new ErrorDetails();
+		
 		List<ErrorDetails> listDetailError = new ArrayList<>();
 	
 		 if (!StringUtils.isNumeric(individu.getCle())){
-			  errorDetail.setCode("IMX-0001");
-			  errorDetail.setTitle("Type de Parameter");
-			  errorDetail.setDescription("CLE");
+			 ErrorDetails errorDetail = new ErrorDetails("IMX-0001","Type de Parameter","CLE");			
 			  listDetailError.add(errorDetail);			  
 		 }				 
-		 if (StringUtils.isNumeric(individu.getNom())){				 				 
-				  errorDetail.setCode("IMX-0001");
-				  errorDetail.setTitle("Type de Parameter");
-				  errorDetail.setDescription("NOM");
+		 if (StringUtils.isNumeric(individu.getNom())){	
+			 ErrorDetails errorDetail = new ErrorDetails("IMX-0001","Type de Parameter","NOM");
 				  listDetailError.add(errorDetail);				  
 		 }
 		 if (!StringUtils.isNumeric(individu.getParent())){
-				  errorDetail.setCode("IMX-0001");
-				  errorDetail.setTitle("Type de Parameter");
-				  errorDetail.setDescription("PARENT");
+			 ErrorDetails errorDetail = new ErrorDetails("IMX-0001","Type de Parameter","PARENT");
 				  listDetailError.add(errorDetail);				  
 		 }
 		 if (StringUtils.isNumeric(individu.getStatus())){
-					  errorDetail.setCode("IMX-0001");
-					  errorDetail.setTitle("Type de Parameter");
-					  errorDetail.setDescription("STATUS");
+			 ErrorDetails errorDetail = new ErrorDetails("IMX-0001","Type de Parameter","STATUS");
 					  listDetailError.add(errorDetail);					  
 		 }
 		 if ( StringUtils.isNumeric(individu.getType())){
-					  errorDetail.setCode("IMX-0001");
-					  errorDetail.setTitle("Type de Parameter");
-					  errorDetail.setDescription("TYPE");
+			 ErrorDetails errorDetail = new ErrorDetails("IMX-0001","Type de Parameter","TYPE");
 					  listDetailError.add(errorDetail);					  
 		 }									
 			

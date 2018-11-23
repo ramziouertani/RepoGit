@@ -8,7 +8,18 @@ public class ErrorRetour {
 	
 	public String message;
 	
-	public List<ErrorDetails> listErrors;
+	public List<ErrorDetails> listErrors;		
+		
+	public ErrorRetour() {
+		super();
+	}
+
+	public ErrorRetour(String status, String message, List<ErrorDetails> listErrors) {
+		super();
+		this.status = status;
+		this.message = message;
+		this.listErrors = listErrors;
+	}
 
 	public String getStatus() {
 		return status;

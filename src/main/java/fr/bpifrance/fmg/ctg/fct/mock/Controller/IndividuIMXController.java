@@ -38,57 +38,90 @@ public class IndividuIMXController {
 			return new ResponseEntity<>(individuRepository.allIndividus(),HttpStatus.OK);
 	}	
 		
-	@GetMapping("individus/{cle}")
+	@GetMapping("individu/{cle}")
 	public ResponseEntity<Object> getIndividu(@PathVariable(value = "cle") String cle){
 
 		if(!individuRepository.individuExist(cle))	{
 			
 			List<ErrorDetails> listDetailError = new ArrayList<>();
-			ErrorDetails errorDetail = new ErrorDetails();		  
-			ErrorRetour error = new ErrorRetour();
-		  	  error.setStatus("IMX-ERRORS");
-		      error.setMessage("Pas de Reponse");
-			  errorDetail.setCode("IMX-0007");
-			  errorDetail.setDescription("Le parameter: " + cle  + " n'existe pas  ");
-			  errorDetail.setTitle("Parameter introuvable");
-			  listDetailError.add(errorDetail);				  
-			  error.setListErrors(listDetailError);
-			  
-			 return new ResponseEntity<Object>(error, HttpStatus.OK);
-			 }		
-		return new ResponseEntity<>(individuRepository.getByCle(cle),HttpStatus.OK);
-		
+			ErrorDetails errorDetail = new ErrorDetails("IMX-0007","could not fount the parameter : " + cle ,"Parameter introuvable");		  
+			listDetailError.add(errorDetail);				  
+			ErrorRetour error = new ErrorRetour("IMX-ERRORS","fonctionelle",listDetailError);
+		return new ResponseEntity<Object>(error, HttpStatus.OK);
+		}		
+		return new ResponseEntity<>(individuRepository.getByCle(cle),HttpStatus.OK);	
 	}
 	
-	@PostMapping("individus" )
-	public ResponseEntity<Object> create(@RequestBody Individu individu) throws IndividuException{
+	@GetMapping("individus/{nom}")
+	public ResponseEntity<Object> getIndividuByNom(@PathVariable(value = "nom") String nom){
+
+		if(nom.equals("SIG")) {	
+				return new ResponseEntity<>(individuRepository.getIndividuByNom("ENTREPRISE"),HttpStatus.OK);						
+		}else if(nom.equals("ETA")) {					
+			return new ResponseEntity<>(individuRepository.getIndividuByNom("ETABLISSEMENT"),HttpStatus.OK);
+		}else if(nom.equals("INT")) {								
+				return new ResponseEntity<>(individuRepository.getIndividuByNom("INTERLOCUTEUR"),HttpStatus.OK);			
+		}else if(nom.equals("ADD")) {								
+				return new ResponseEntity<>(individuRepository.getIndividuByNom("ADRESSE"),HttpStatus.OK);			
+		}else {
+				List<ErrorDetails> listDetailError = new ArrayList<>();
+				ErrorDetails errorDetail = new ErrorDetails("IMX-0007","could not fount the parameter : " + nom ,"Parameter introuvable");		  
+				  listDetailError.add(errorDetail);				  
+					ErrorRetour error = new ErrorRetour("IMX-ERRORS","fonctionelle",listDetailError);
+					  error.setListErrors(listDetailError);
+				 return new ResponseEntity<Object>(error, HttpStatus.OK);		
+		}						
+	}
+	
+	@GetMapping("individus/{nom}/{cle}")
+	public ResponseEntity<Object> getIndividuParam(@PathVariable(value = "nom") String nom,@PathVariable(value = "cle") String cle){
+
+		if(!individuRepository.individuExist(cle))	{
+			List<ErrorDetails> listDetailError = new ArrayList<>();
+			ErrorDetails errorDetail = new ErrorDetails("IMX-0007","could not fount the parameter : " + cle ,"Parameter introuvable");		  
+			  listDetailError.add(errorDetail);				  
+				ErrorRetour error = new ErrorRetour("IMX-ERRORS","fonctionelle",listDetailError);
+				  error.setListErrors(listDetailError);
+
+			 return new ResponseEntity<Object>(error, HttpStatus.OK);
+		}else {
+		
+		   if(nom.equals("SIG")) {
+		     return new ResponseEntity<>(individuRepository.individuExistParam("ENTREPRISE", cle),HttpStatus.OK);						
+		   }else if(nom.equals("ETA")) {
+		     return new ResponseEntity<>(individuRepository.individuExistParam("ETABLISSEMENT", cle),HttpStatus.OK);
+		   }else if(nom.equals("INT")) {
+		     return new ResponseEntity<>(individuRepository.individuExistParam("INTERLOCUTEUR", cle),HttpStatus.OK);			
+		   }else if(nom.equals("ADD")) {
+		     return new ResponseEntity<>(individuRepository.individuExistParam("ADRESSE", cle),HttpStatus.OK);			
+		   }else {
+				List<ErrorDetails> listDetailError = new ArrayList<>();
+				ErrorDetails errorDetail = new ErrorDetails("IMX-0007","Le parameter: " + nom  + " n'existe pas  ","Parameter introuvable");		  
+				  listDetailError.add(errorDetail);				  
+					ErrorRetour error = new ErrorRetour("IMX-ERRORS","Pas de Reponse",listDetailError);
+					  error.setListErrors(listDetailError);
+				 return new ResponseEntity<Object>(error, HttpStatus.OK);		
+		    }
+		}
+		   
+	}	
+	
+	@PostMapping("individus" )	
+    public ResponseEntity<Object> create(@RequestBody Individu individu) throws IndividuException{
 		
 		List<ErrorDetails> list = individuRepository.checkParameter(individu);
-		if(!list.isEmpty()) {
-			ErrorRetour error = new ErrorRetour();
-
-			error.setStatus("IMX-ERRORS");
-			error.setMessage("ERREUR PARAMETER");
-			error.setListErrors(list);
-			return new ResponseEntity<Object>(error, HttpStatus.OK);
-			
+		if(!list.isEmpty()) {			
+			ErrorRetour error = new ErrorRetour("IMX-ERRORS","ERREUR PARAMETER",list);
+			return new ResponseEntity<Object>(error, HttpStatus.OK);			
 		}
 		
 		List<ErrorDetails> listDetailError = new ArrayList<>();
-		ErrorDetails errorDetail = new ErrorDetails();		  
-		ErrorRetour error = new ErrorRetour();
-
 		if(!individuRepository.individuExist(individu.getCle())){	
-			if(individuRepository.getIndividuByParent(individu.getParent()).isEmpty()&& !(individu.getType().equals("ENTREPRISE")) ){
-				
-			  	  error.setStatus("IMX-ERRORS");
-			      error.setMessage("dépendence introuvable");
-				  errorDetail.setCode("IMX-0002");
-				  errorDetail.setDescription("Le parent: " + individu.getParent()  + " n'exist pas pour ajouter  " + individu.getType());
-				  errorDetail.setTitle("dépendence");
+			if(individuRepository.getIndividuByParent(individu.getParent()).isEmpty() && !(individu.getType().equals("ENTREPRISE")) ){
+
+				ErrorDetails errorDetail = new ErrorDetails("IMX-0002","Parent: " + individu.getParent()  + " not Fount to add   " + individu.getType(),"dependence");		  			  				
 				  listDetailError.add(errorDetail);				  
-				  error.setListErrors(listDetailError);
-				  
+					ErrorRetour error = new ErrorRetour("IMX-ERRORS","Fonctionelle",listDetailError);			  
 				 return new ResponseEntity<Object>(error, HttpStatus.OK);
 			}
 			else {
@@ -96,16 +129,10 @@ public class IndividuIMXController {
 				return new ResponseEntity<Object>(individu.getType() + "  Ok.", HttpStatus.OK);
 			}						   
 		}
-		else{			
-			
-			  error.setStatus("IMX-ERRORS");
-			  error.setMessage("Doublement les données ");
-			  errorDetail.setCode("IMX-0004");
-			  errorDetail.setDescription(individu.getType() + "  exist déja");
-			  errorDetail.setTitle("Doublement");
-			  listDetailError.add(errorDetail);			  
-			  error.setListErrors(listDetailError);
-			
+		else{	
+			ErrorDetails errorDetail = new ErrorDetails("IMX-0004",individu.getType() +" Exist in database","Data Duplicate");		  			  				
+			  listDetailError.add(errorDetail);				  		
+			 ErrorRetour error = new ErrorRetour("IMX-ERRORS","Fonctionelle ",listDetailError);
 			return new ResponseEntity<Object>(error, HttpStatus.OK);
 	    }	
 	}
@@ -113,18 +140,18 @@ public class IndividuIMXController {
 	@PutMapping(value = "individus/{cle}")
 	public ResponseEntity<Object> updateIndividu(@RequestBody Individu individuDetail) {	
 		
+		List<ErrorDetails> list = individuRepository.checkParameter(individuDetail);
+		if(!list.isEmpty()) {			
+			ErrorRetour error = new ErrorRetour("IMX-ERRORS","ERREUR PARAMETER",list);
+			return new ResponseEntity<Object>(error, HttpStatus.OK);			
+		}
+		
 		if(!individuRepository.individuExist(individuDetail.getCle()))	{
 			
 			List<ErrorDetails> listDetailError = new ArrayList<>();
-			ErrorDetails errorDetail = new ErrorDetails();		  
-			ErrorRetour error = new ErrorRetour();
-		  	  error.setStatus("IMX-ERRORS");
-		      error.setMessage("Pas de Reponse");
-			  errorDetail.setCode("IMX-0007");
-			  errorDetail.setDescription("Le parameter: " + individuDetail.getCle()  + " n'existe pas  ");
-			  errorDetail.setTitle("Parameter introuvable");
-			  listDetailError.add(errorDetail);				  
-			  error.setListErrors(listDetailError);
+			ErrorDetails errorDetail = new ErrorDetails("IMX-0007","could not fount the parameter : " + individuDetail.getCle() ,"Parameter introuvable");		  
+			listDetailError.add(errorDetail);				  
+			ErrorRetour error = new ErrorRetour("IMX-ERRORS","fonctionelle",listDetailError);
 			  
 			 return new ResponseEntity<Object>(error, HttpStatus.OK);
 			 }
@@ -136,13 +163,8 @@ public class IndividuIMXController {
 		individuChercher.setStatus("valid");
 		individuChercher.setType(individuDetail.getType());
 			 
-		   individuRepository.createIndividu(individuDetail);
-		   
-		   ErrorResponse error = new ErrorResponse();
-			error.setCode(HttpStatus.OK.value());
-			error.setMessage("Le Status de " + individuDetail.getType() + "  est modifier");
-		   return ResponseEntity.status(HttpStatus.CREATED).
-				   body("HttpStatus - " + error.getCode() + System.getProperty("line.separator") + "Le Status de " + error.getMessage());
+		individuRepository.createIndividu(individuDetail);		   
+		return new ResponseEntity<Object>(individuDetail.getType() + "  modified.", HttpStatus.OK);
 	}
 
 
