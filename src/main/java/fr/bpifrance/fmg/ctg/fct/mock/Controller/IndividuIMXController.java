@@ -83,7 +83,7 @@ public class IndividuIMXController {
 				ErrorRetour error = new ErrorRetour("IMX-ERRORS","fonctionelle",listDetailError);
 				  error.setListErrors(listDetailError);
 
-			 return new ResponseEntity<Object>(error, HttpStatus.OK);
+			 return new ResponseEntity<Object>(error, HttpStatus.BAD_REQUEST);
 		}else {
 		
 		   if(nom.equals("SIG")) {
@@ -100,7 +100,7 @@ public class IndividuIMXController {
 				  listDetailError.add(errorDetail);				  
 					ErrorRetour error = new ErrorRetour("IMX-ERRORS","Pas de Reponse",listDetailError);
 					  error.setListErrors(listDetailError);
-				 return new ResponseEntity<Object>(error, HttpStatus.OK);		
+				 return new ResponseEntity<Object>(error, HttpStatus.BAD_REQUEST);		
 		    }
 		}
 		   
